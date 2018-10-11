@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'OAI-PMH OpenEdition'
+project = u'OpenEdition OAI-PMH Repository'
 copyright = u'2018, Jean-François Rivière'
 author = u'Jean-François Rivière'
 

@@ -1,13 +1,14 @@
-OpenEdition OAI-PMH Documentation 
-=================================
+OpenEdition OAI-PMH repository Documentation 
+============================================
 
-The OpenEdition OAI-PMH repository contains the metadata of the documents available on OpenEdition Books, OpenEdition Journals, Hypotheses, and Calenda.
+The OpenEdition OAI-PMH repository provides metadata of the documents published on OpenEdition Books, OpenEdition Journals, Hypotheses, and Calenda.
+
 The repository is available online at http://oai.openedition.org.
-It uses the version 2.0 of the OAI-PMH protocol. The specifications of this protocol are available online at: http://www.openarchives.org/OAI/openarchivesprotocol.html.
 
+It uses the version 2.0 of the OAI-PMH protocol. 
 
-Content
--------
+This documentation describes the specific elements related to OpenEdition but does not include the usual recommendations of the OAI-PMH protocol (available on the Open Archives Initiative website: http://www.openarchives.org/OAI/openarchivesprotocol.html).
+
 
 .. toctree::
    :maxdepth: 1
