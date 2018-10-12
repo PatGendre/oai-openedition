@@ -16,8 +16,7 @@ Unavailable for Calenda (records of the set ``events``)
 
 For Journal Issues and Books, ``dc.creator`` provides authors of the issue or the book AND authors of the child articles or chapters.
 
-**Example of a book with multiple authors at chapter level**
-
+**Example of a book with multiple authors at chapter level:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/348&metadataPrefix=oai_dc
 
 3. dc:contibutor
