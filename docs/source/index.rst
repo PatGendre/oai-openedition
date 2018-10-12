@@ -1,8 +1,7 @@
 OpenEdition OAI-PMH repository Documentation 
 ============================================
 
-CAUTION: DRAFT VERSION !
-===============================
+.. warning:: CAUTION: DRAFT VERSION !
 
 .. image:: _static/openedition.png
 

@@ -196,7 +196,7 @@ Available for OpenEdition Journals and OpenEdition Books.
 
 
 9.2. OpenAIRE Access Level (OpenEdition Journals and Openedition Books)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 guidelines (Access Level) <https://guidelines.openaire.eu/en/latest/literature/field_accesslevel.html>`_, an extra ``dc.rights`` element with a prefix ``info:eu-repo/semantics/`` will provide the publication type with the following vocabulary:
 
@@ -239,6 +239,6 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:balkanologi
 Does not work ?
 
 13. dc:description
------------------
+--------------------------------
 
 
