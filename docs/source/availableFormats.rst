@@ -1,6 +1,9 @@
 Available Formats
 ============================
 
+Metadata in OAI
+-------------------
+
 Records are available to all in the following metadata formats:
 
 * ``oai_dc``: Dublin Core
@@ -21,7 +24,7 @@ Link to TEI structured full text and to Raw text is retrivable from OAI in ``qdc
 * ``<dcterms:hasFormat scheme="TEI">``: link to structured  XML-TEI Full text (suitable for republication and text and dat mining)
 * ``<dcterms:hasFormat scheme="BASICTEI">``: link to full text in the "basicTEI" format witch provide metadata of the document in TeiHeader and raw text in the body section (suitable for text indexing). 
 
-If you need to get an access to the OpenEdition’s TEI as a partner, please email us at contact@openedition.org.
+If you need to get an access to the OpenEdition’s TEI as a partner, please email us at contact+oai@openedition.org.
 
 
 **Example**

@@ -4,6 +4,8 @@ OpenEdition OAI-PMH repository Documentation
 CAUTION: DRAFT VERSION !
 ===============================
 
+.. image:: _static/openedition.png
+
 The OpenEdition OAI-PMH repository provides metadata of the documents published on `OpenEdition Books <https://books.openedition.org>`_, `OpenEdition Journals <https://journals.openedition.org>`_, `Hypotheses <https://hypotheses.org>`_, and `Calenda <http://calenda.org>`_.
 
 The repository is available online at http://oai.openedition.org.
