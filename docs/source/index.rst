@@ -16,7 +16,7 @@ This documentation describes the specific elements related to OpenEdition but do
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Harvesting
 
    harvesting
@@ -25,7 +25,7 @@ This documentation describes the specific elements related to OpenEdition but do
   
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Data description
 
    availableFormats
@@ -36,7 +36,7 @@ This documentation describes the specific elements related to OpenEdition but do
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: About 
 
    openedition
