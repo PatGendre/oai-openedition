@@ -3,12 +3,12 @@ oai_dc format
 
 The oai_dc format provides th following elements
 
-dc:title
+1. dc:title
 -----------------
 
 Title of the document. Non-repeatable.
 
-dc:creator
+2. dc:creator
 -----------------
 Author(s) of the document. Repeatable.
 
@@ -20,12 +20,12 @@ For Journal Issues and Books, ``dc.creator`` provides authors of the issue or th
 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/348&metadataPrefix=oai_dc
 
-dc:contibutor
+3. dc:contibutor
 -----------------
 Unused
 
 
-dc:date
+4. dc:date
 -----------------
 Publishing date of the document on OpenEdition platform. 
 
@@ -33,8 +33,7 @@ If an article was previously published in another format (for instance a print v
 
 For OpenEdition Journals only, and according to `OpenAIRE 3.0 guidelines (Embargo End Date) <https://guidelines.openaire.eu/en/latest/literature/field_embargoenddate.html#dc-date-embargo>`_, if ``dc:rights = "info:eu-repo/semantics/embargoedAccess"``, then an extra ``dc.date`` element with a prefix ``info:eu-repo/date/embargoEnd/`` will provide the end date of embargo (availability date of the document in open access):
 
-**Example**
-
+**Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/8732&metadataPrefix=oai_dc
 
 .. code-block:: xml
@@ -43,15 +42,14 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/8732&m
     <dc:rights>info:eu-repo/semantics/embargoedAccess</dc:rights>
     <dc:date>info:eu-repo/date/embargoEnd/2021-01-01</dc:date>
 
-dc:publisher
+5. dc:publisher
 -----------------
 
 ``dc:publisher`` provides the publisher name.
 
 For OpenEdition Journals and Hypotheses documents ``dc:publisher`` provides also the journal or blog title
 
-**Example**
-
+**Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:studifrancesi/2636&metadataPrefix=oai_dc
 
 .. code-block:: xml
@@ -61,16 +59,15 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:studifrance
     <dc:publisher>Studi Francesi</dc:publisher>
 
 
-dc:identifier
+6. dc:identifier
 -------------------
 Identifier of the document. Repeatable.
 
-URL
-^^^^
+6.1. URL
+^^^^^^^^^
 ``dc:identifier`` provides without prefix the URL of the document.
 
-**Example**
-
+**Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/5530&metadataPrefix=oai_dc
 
 .. code-block:: xml
@@ -78,14 +75,13 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/5530&m
 
     <dc:identifier>http://journals.openedition.org/remi/5530</dc:identifier>
 
-DOI
-^^^^^^^
+6.2. DOI
+^^^^^^^^^^
 Available for OpenEdition Journals and OpenEdition Books.
 
 ``dc:identifier`` with ``urn:doi`` prefix provides the DOI of the document.
 
-**Example**
-
+**Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/5530&metadataPrefix=oai_dc
 
 .. code-block:: xml
@@ -93,14 +89,13 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/5530&m
 
     <dc:identifier>urn:doi:10.4000/remi.5530</dc:identifier>
 
-ISBN
-^^^^^^
+6.3. ISBN
+^^^^^^^^^^
 Available for OpenEdition Books.
 
 ``dc:identifier`` with ``urn:isbn`` and ``urn:eisbn`` prefix provides respectively ISBN of the print and electronic version of the book.
 
-**Example**
-
+**Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/348&metadataPrefix=oai_dc
 
 .. code-block:: xml
@@ -111,8 +106,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
 
 For OAI records of a book chapter, the ISBN and eISBN provided refer to the parent book of that chapter.
 
-**Example**
-
+**Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/367&metadataPrefix=oai_dc
 
 .. code-block:: xml
@@ -121,12 +115,11 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
     <dc:identifier>urn:eisbn:9782821875470</dc:identifier>
     <dc:identifier>urn:isbn:9783863951221</dc:identifier>
 
-dc:language
+7. dc:language
 -----------------
 Document language. RFC1766 format. 
 
-**Example**
-
+**Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:cfee/1081&metadataPrefix=oai_dc
 
 .. code-block:: xml
@@ -134,11 +127,11 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
     
     <dc:language>en</dc:language>
 
-dc:type
+8. dc:type
 -----------------
 Document type
 
-OpenEdition Types
+8.1. OpenEdition Types
 ^^^^^^^^^^^^^^^^^^^^^^
 
 * Possible values for OpenEdition Journals
@@ -172,7 +165,7 @@ OpenEdition Types
   * ``ecole d'ete``
   * ``appel d'offres``
 
-OpenAIRE Types (OpenEdition Journals and Openedition Books)
+8.2. OpenAIRE Types (OpenEdition Journals and Openedition Books)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 guidelines (Publication Type) <https://guidelines.openaire.eu/en/latest/literature/field_publicationtype.html>`_, an extra ``dc.type`` element with a prefix ``info:eu-repo/semantics/`` will provide the publication type with the following vocabulary:
@@ -183,8 +176,7 @@ For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 g
 * ``info:eu-repo/semantics/bookpart``
 * ``info:eu-repo/semantics/other``
 
-**Example**
-
+**Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:lectures/27329&metadataPrefix=oai_dc
 
 .. code-block:: xml
@@ -194,17 +186,17 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:lectures/27
     <dc:type>info:eu-repo/semantics/review</dc:type>
 
 
-dc:rights
+9. dc:rights
 -----------------
 
-License
-^^^^^^^^
+9.1. License
+^^^^^^^^^^^^^^^
 
 Available for OpenEdition Journals and OpenEdition Books. 
 ``dc:rights`` may contain license information if provided by the publisher.
 
 
-OpenAIRE Access Level (OpenEdition Journals and Openedition Books)
+9.2. OpenAIRE Access Level (OpenEdition Journals and Openedition Books)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 guidelines (Access Level) <https://guidelines.openaire.eu/en/latest/literature/field_accesslevel.html>`_, an extra ``dc.rights`` element with a prefix ``info:eu-repo/semantics/`` will provide the publication type with the following vocabulary:
@@ -213,8 +205,7 @@ For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 g
 * ``info:eu-repo/semantics/restrictedAccess``
 * ``info:eu-repo/semantics/openAccess``
 
-**Example**
-
+**Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:ariadnaediciones/158&metadataPrefix=oai_dc
 
 .. code-block:: xml
@@ -224,14 +215,13 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
     <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
 
 
-dc:coverage
+10. dc:coverage
 -----------------
 Available for OpenEdition Journals and OpenEdition Books.
 
 ``dc:coverage`` may contain spatial topics of the document.
 
-**Example**
-
+**Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:balkanologie/717&metadataPrefix=oai_dc
 
 .. code-block:: xml
@@ -241,15 +231,15 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:balkanologi
     <dc:coverage>Turquie</dc:coverage>
 
 
-dc:subjects
+11. dc:subjects
 -----------------
 
 
-dc:source
+12. dc:source
 -----------------
+Does not work ?
 
-
-dc:description
+13. dc:description
 -----------------
 
 
