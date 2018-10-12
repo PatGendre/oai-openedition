@@ -19,9 +19,7 @@ This documentation describes the specific elements related to OpenEdition but do
    :maxdepth: 1
    :caption: Harvesting
 
-   selectiveHarvesting
-   resumptionToken
-   deletedRecords
+   harvesting
    sample
 
   
