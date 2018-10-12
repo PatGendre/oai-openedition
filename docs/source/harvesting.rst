@@ -7,11 +7,7 @@ The openedition repository follows the version 2.0 of the OAI-PMH protocol avail
 Selective Harvesting
 ------------------------------
 
-The repository allows selective harvesting, by set and by date. Two simple sample queries:
-
-* http://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=journals:chs for retrieving a list of records from the journal Crime, History & Societies
-* http://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&from=2013-03-13 for retrieving a list of records added or updated since 13 march 2013.
-
+The repository allows selective harvesting, by set and by date. 
 
 Selective harvesting by set
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
