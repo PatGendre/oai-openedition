@@ -139,7 +139,7 @@ dc:type
 Document type
 
 OpenEdition Types
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 * Possible values for OpenEdition Journals
 
@@ -173,8 +173,9 @@ OpenEdition Types
   * ``appel d'offres``
 
 OpenAIRE Types (OpenEdition Journals and Openedition Books)
-------------------------------------------------------------------
-For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 guidelines (Publication Type) <https://guidelines.openaire.eu/en/latest/literature/field_publicationtype.html>`_, an extra ``dc.type`` element with a prefix ``info:eu-repo/semantics/`` will provide the publication type with the following vocabulary 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 guidelines (Publication Type) <https://guidelines.openaire.eu/en/latest/literature/field_publicationtype.html>`_, an extra ``dc.type`` element with a prefix ``info:eu-repo/semantics/`` will provide the publication type with the following vocabulary:
 
 * ``info:eu-repo/semantics/article``
 * ``info:eu-repo/semantics/review``
@@ -195,6 +196,32 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:lectures/27
 
 dc:rights
 -----------------
+
+License
+^^^^^^^^
+
+Available for OpenEdition Journals and OpenEdition Books. 
+``dc:rights`` may contain license information if provided by the publisher.
+
+
+OpenAIRE Access Level (OpenEdition Journals and Openedition Books)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 guidelines (Access Level) <https://guidelines.openaire.eu/en/latest/literature/field_accesslevel.html>`_, an extra ``dc.rights`` element with a prefix ``info:eu-repo/semantics/`` will provide the publication type with the following vocabulary:
+
+* ``info:eu-repo/semantics/embargoedAccess``
+* ``info:eu-repo/semantics/restrictedAccess``
+* ``info:eu-repo/semantics/openAccess``
+
+**Example**
+
+http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:ariadnaediciones/158&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+    
+    <dc:rights>CC BY-SA 3.0</dc:rights>
+    <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
 
 
 dc:coverage
