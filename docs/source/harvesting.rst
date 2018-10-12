@@ -24,7 +24,7 @@ Selective harvesting by date
 
 The repository allows harvesting by date, i.e. harvesting of records added or updated before or after a specified date
 
-The parameters to use are from or until. The date can have the ``dd-mm-yyyy`` format or the ``dd-mm-yyyyThh:mm:ssZ`` format.
+The parameters to use are ``from`` and ``until``. Allowed date formats are ``dd-mm-yyyy`` and ``dd-mm-yyyyThh:mm:ssZ``.
 
 **Example**
 
