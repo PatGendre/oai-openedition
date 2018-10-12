@@ -14,34 +14,111 @@ Author(s) of the document. Repeatable.
 
 Unavailable for Calenda (records of the set ``events``)
 
-For Journal Issues and Books, ``dc.creator`` provides authors of the issue or book AND authors of the child articles or chapters.
+For Journal Issues and Books, ``dc.creator`` provides authors of the issue or the book AND authors of the child articles or chapters.
 
-**Example of a books whith multiple authors at chapter level**
+**Example of a book with multiple authors at chapter level**
+
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/348&metadataPrefix=oai_dc
 
 ``dc:contibutor``
 -----------------
+Unused
 
 
-dc:date
+``dc:date``
+-----------------
+Publishing date of the document on OpenEdition platform. 
+
+If an article was previously published in another format (for instance a print edition), the ``dc:date`` element won't provide the date of the previous publishing but only the publishing date of the document on OpenEdition.
+
+For OpenEdition Journals only, and according to `Openaire 3.0 guidelines <https://guidelines.openaire.eu/en/latest/literature/field_embargoenddate.html#dc-date-embargo>`_, if ``dc:rights = "info:eu-repo/semantics/embargoedAccess"``, then an extra ``dc.date`` element with a prefix ``info:eu-repo/date/embargoEnd/`` will provide the end date of embargo (availability date of the document in open access):
+
+**Example**
+
+http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/8732&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+
+    <dc:rights>info:eu-repo/semantics/embargoedAccess</dc:rights>
+    <dc:date>info:eu-repo/date/embargoEnd/2021-01-01</dc:date>
+
+``dc:publisher``
 -----------------
 
+``dc:publisher`` provides the publisher name.
 
-dc:publisher
------------------
+For OpenEdition Journals and Hypotheses documents ``dc:publisher`` provides also the journal or blog title
+
+**Example**
+
+http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:studifrancesi/2636&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+    
+    <dc:publisher>Rosenberg &amp; Sellier</dc:publisher>
+    <dc:publisher>Studi Francesi</dc:publisher>
 
 
-dc:identifier
------------------
-
-
-dc:creator
------------------
+``dc:identifier``
+-------------------
+Identifier of the document. Repeatable.
 URL
 ^^^^
+``dc:identifier`` provides without prefix the URL of the document.
+
+**Example**
+
+http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/5530&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+
+    <dc:identifier>http://journals.openedition.org/remi/5530</dc:identifier>
 
 DOI
 ^^^^^^^
+Available for OpenEdition Journals and OpenEdition Books.
+
+``dc:identifier`` with ``urn:doi`` prefix provides the DOI of the document.
+
+**Example**
+
+http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/5530&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+
+    <dc:identifier>urn:doi:10.4000/remi.5530</dc:identifier>
+
+ISBN
+^^^^^^
+Available for OpenEdition Books.
+
+``dc:identifier`` with ``urn:isbn`` and ``urn:eisbn`` prefix provides respectively ISBN of the print and electronic version of the book.
+
+**Example**
+
+http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/348&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+    
+    <dc:identifier>urn:eisbn:9782821875470</dc:identifier>
+    <dc:identifier>urn:isbn:9783863951221</dc:identifier>
+
+For OAI records of a book chapter, the ISBN and eISBN provided refer to the parent book of that chapter.
+
+**Example**
+
+http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/367&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+    
+    <dc:identifier>urn:eisbn:9782821875470</dc:identifier>
+    <dc:identifier>urn:isbn:9783863951221</dc:identifier>
 
 dc:language
 -----------------
