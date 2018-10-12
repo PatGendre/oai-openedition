@@ -226,6 +226,19 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
 
 dc:coverage
 -----------------
+Available for OpenEdition Journals and OpenEdition Books.
+
+``dc:coverage`` may contain spatial topics of the document.
+
+**Example**
+
+http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:balkanologie/717&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+    
+    <dc:coverage>Bulgarie</dc:coverage>
+    <dc:coverage>Turquie</dc:coverage>
 
 
 dc:subjects
