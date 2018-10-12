@@ -9,14 +9,13 @@ Records are available to all in the following metadata formats:
 
 The METS format is available only for journal issues and books. It is not available for blogs, Calenda events, and electronic journals publishing streamed articles.
 
-Furthermore, OpenEdition’s partners have access to full text in TEI (Text encoding initiative) format of OpenEdiiton Journals and OpenEdition Books documents. 
 
-It allows retrieving and indexing the full text of the documents. If you want to get an access to the OpenEdition’s TEI, please contact us at contact@openedition.org.
-
-TEI full text and raw full text for partners
+TEI full text and Raw full text for partners
 ------------------------------------------------------
 
-Link to TEI structured full text and to raw text is also retrivable from OAI in ``qdc`` format.
+Furthermore, OpenEdition provide partners an access to full text in TEI (`Text Encoding Initiative <http://www.tei-c.org/>`_) format and Raw text format for documents published on OpenEdition Journals and OpenEdition Books. 
+
+Link to TEI structured full text and to Raw text is retrivable from OAI in ``qdc`` format.
 ``qdc`` records provide 2 elements :
 
 * ``<dcterms:hasFormat scheme="TEI">``: link to structured  XML-TEI Full text (suitable for republication and text and dat mining)

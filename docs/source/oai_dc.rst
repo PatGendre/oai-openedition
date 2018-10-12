@@ -1,4 +1,4 @@
-oai_dc Format
+oai_dc format
 ===================
 
 

@@ -20,7 +20,6 @@ This documentation describes the specific elements related to OpenEdition but do
    selectiveHarvesting
    resumptionToken
    deletedRecords
-   availableFormats
    sample
 
   
@@ -29,25 +28,19 @@ This documentation describes the specific elements related to OpenEdition but do
    :maxdepth: 1
    :caption: Data description
 
+   availableFormats
    sets
    oai_dc
    qdc
    mets
 
 
-Titre
-=====
+.. toctree::
+   :maxdepth: 1
+   :caption: About 
 
-Texte d'explication ::
-
-    print 'hello'
-    >> hello
-
+   openedition
+   license
+   help
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
