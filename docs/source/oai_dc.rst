@@ -21,7 +21,16 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
 
 3. dc:contibutor
 -----------------
-Unused
+
+Scientific and academic editor of the document. Available for OpenEdition Journals and OpenEdition Books. 
+
+**Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:cvz/3321&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+
+    <dc:contributor>Alvarez Roblin, David</dc:contributor>
+    <dc:contributor>Biaggini, Olivier</dc:contributor>
 
 
 4. dc:date
@@ -30,7 +39,7 @@ Publishing date of the document on OpenEdition platform.
 
 If an article was previously published in another format (for instance a print version), the ``dc:date`` element won't provide the date of the previous publishing but only the publishing date of the document on OpenEdition.
 
-For OpenEdition Journals only, and according to `OpenAIRE 3.0 guidelines (Embargo End Date) <https://guidelines.openaire.eu/en/latest/literature/field_embargoenddate.html#dc-date-embargo>`_, if ``dc:rights = "info:eu-repo/semantics/embargoedAccess"``, then an extra ``dc.date`` element with a prefix ``info:eu-repo/date/embargoEnd/`` will provide the end date of embargo (availability date of the document in open access):
+For OpenEdition Journals, and according to `OpenAIRE 3.0 guidelines (Embargo End Date) <https://guidelines.openaire.eu/en/latest/literature/field_embargoenddate.html#dc-date-embargo>`_, if ``dc:rights = "info:eu-repo/semantics/embargoedAccess"``, then an extra ``dc.date`` element with a prefix ``info:eu-repo/date/embargoEnd/`` will provide the end date of embargo (availability date of the document in open access):
 
 **Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/8732&metadataPrefix=oai_dc
@@ -297,4 +306,17 @@ Unused
     <dc:description xml:lang="fr">L’archipel des Marquises (Polynésie française) construit son projet de développement territorial, y figurent deux projets d’excellence : l’inscription de l’archipel sur la liste du patrimoine mondial de l’UNESCO et la création d’une aire marine protégée. Dans ce contexte, un programme de recherche partenarial et participatif portant sur le patrimoine lié à la mer aux Marquises (PALIMMA) a contribué à identifier les connaissances présentes dans la bibliographie et à construire des données avec la population. Il s’agissait de déterminer quels étaient les patrimoines liés à la mer pour les Marquisiens, les éventuelles menaces afférentes et les pistes de gestion. Au-delà de la production de connaissance, ce programme, porté par la société marquisienne, a participé à la construction des territoires, à renforcer la capacité des populations à intervenir dans les débats et à la construction de liens entre individus et institutions.</dc:description>
     <dc:description xml:lang="en">Marquesas islands archipelago aimes to built its territorial development project in particular thanks to become listed as a world heritage site by UNESCO and the establishment of a marine protected area. In this context, a research programme was carried out. It was a partenarial and partipatory research about maritime heritage in Marquesas (PALIMMA). The objectives were to identify knowledge in the bibliography and to built data with the population (what heritage, what threats and what managerial solutions). Beyond knowledge production, this research programme, with marquisian local community, showed how important it is in ordrer to reach a balanced territorial development, to foster the empowerment of local population and to build relationships between individuals and institutions. A research program like PALIMMA can help to aim those objectives.</dc:description>
 
+14. dc:relation
+----------------------------
 
+For OpenEdition Journals, and according to `OpenAIRE 3.0 guidelines (Publication Reference) <https://guidelines.openaire.eu/en/latest/literature/field_publicationreference.html>`_, ``dc.relation`` element with a prefix ``info:eu-repo/semantics/reference/issn/`` will provide ISSNs of the online journal and of the print version (if available).
+
+**Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:geocarrefour/10121&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+
+    <dc:relation>info:eu-repo/semantics/reference/issn/1627-4873</dc:relation>
+    <dc:relation>info:eu-repo/semantics/reference/issn/1960-601X</dc:relation>
+
+ 
