@@ -16,7 +16,7 @@ The METS format is available only for journal issues and books. It is not availa
 TEI full text and Raw full text for partners
 ------------------------------------------------------
 
-.. note :: Access to Full text in TEI or Raw text format is only available for authorized IP address (OpenEdition partners)
+.. note :: Access to Full text in TEI and Raw text format is only available for authorized IP address (OpenEdition partners)
 
 Furthermore, OpenEdition provide partners an access to full text in TEI (`Text Encoding Initiative <http://www.tei-c.org/>`_) format and Raw text format for documents published on OpenEdition Journals and OpenEdition Books. 
 

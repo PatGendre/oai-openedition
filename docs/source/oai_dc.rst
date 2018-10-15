@@ -233,12 +233,62 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:balkanologi
 11. dc:subjects
 -----------------
 
+11.1 Keywords
+^^^^^^^^^^^^^^^^^^
+
+Available for OpenEdition Journals and OpenEdition Books. 
+``dc:subjects`` may contains keywords. In this case, and ``xml:lang`` attribute specifies the language of the keyword.
+
+**Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:belgeo/20507&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+
+    <dc:subject xml:lang="fr">détection de communautés</dc:subject>
+    <dc:subject xml:lang="fr">champs d’interactions</dc:subject>
+    <dc:subject xml:lang="fr">migration</dc:subject>
+    <dc:subject xml:lang="fr">navettes</dc:subject>
+    <dc:subject xml:lang="fr">provinces</dc:subject>
+    <dc:subject xml:lang="fr">Belgique</dc:subject>
+    <dc:subject xml:lang="fr">Census11</dc:subject>
+    <dc:subject xml:lang="en">community detection</dc:subject>
+    <dc:subject xml:lang="en">interaction fields</dc:subject>
+    <dc:subject xml:lang="en">migration</dc:subject>
+    <dc:subject xml:lang="en">commuting</dc:subject>
+    <dc:subject xml:lang="en">provinces</dc:subject>
+    <dc:subject xml:lang="en">Belgium</dc:subject>
+    <dc:subject xml:lang="en">Census11</dc:subject>
+
+
+11.2 Other Subjects
+^^^^^^^^^^^^^^^^^^^^^^
+For OpenEdition Books only, ``dc:subjects`` may also contains terms from `BISAC <https://bisg.org/page/BISACSubjectCodes>`_, `BIC <https://ns.editeur.org/bic_categories>`_, `ISI <https://en.wikipedia.org/wiki/Institute_for_Scientific_Information>`_ classification.
+
+**Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:pum/21469&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+
+    <dc:subject xml:lang="fr">environnement</dc:subject>
+    <dc:subject xml:lang="fr">protection</dc:subject>
+    <dc:subject xml:lang="fr">gestion</dc:subject>
+    <dc:subject xml:lang="fr">politique gouvernementale</dc:subject>
+    <dc:subject>Environmental Studies</dc:subject> <!-- from ISI -->
+    <dc:subject>Political Science</dc:subject> <!-- from ISI -->
+    <dc:subject>POL044000</dc:subject> <!-- From BISAC -->
+    <dc:subject>RND</dc:subject> <!-- From BIC -->
+
+
 
 12. dc:source
 -----------------
-Does not work ?
+Unused
 
 13. dc:description
 --------------------------------
+
+``dc:description`` contains abstracts of the document if available, an excerpt (usualy the first lines) otherwise. Abstasct may be available in several languages. In this case, and ``xml:lang`` attribute specifies the language of the description.
+
+**Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:tem/4515&metadataPrefix=oai_dc
 
 
