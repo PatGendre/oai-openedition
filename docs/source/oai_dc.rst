@@ -274,9 +274,9 @@ For OpenEdition Books only, ``dc:subjects`` may also contains terms from `BISAC 
     <dc:subject xml:lang="fr">gestion</dc:subject>
     <dc:subject xml:lang="fr">politique gouvernementale</dc:subject>
     <dc:subject>Environmental Studies</dc:subject> <!-- from ISI -->
-    <dc:subject>Political Science</dc:subject> <!-- from ISI -->
-    <dc:subject>POL044000</dc:subject> <!-- From BISAC -->
-    <dc:subject>RND</dc:subject> <!-- From BIC -->
+    <dc:subject>Political Science</dc:subject>     <!-- from ISI -->
+    <dc:subject>POL044000</dc:subject>             <!-- From BISAC -->
+    <dc:subject>RND</dc:subject>                   <!-- From BIC -->
 
 
 
@@ -287,8 +287,14 @@ Unused
 13. dc:description
 --------------------------------
 
-``dc:description`` contains abstracts of the document if available, an excerpt (usualy the first lines) otherwise. Abstasct may be available in several languages. In this case, and ``xml:lang`` attribute specifies the language of the description.
+``dc:description`` contains abstracts of the document if available, an excerpt (usualy the first lines) otherwise. Abstacts may be available in several languages. In this case, and ``xml:lang`` attribute specifies the language of the description.
 
 **Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:tem/4515&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+
+    <dc:description xml:lang="fr">L’archipel des Marquises (Polynésie française) construit son projet de développement territorial, y figurent deux projets d’excellence : l’inscription de l’archipel sur la liste du patrimoine mondial de l’UNESCO et la création d’une aire marine protégée. Dans ce contexte, un programme de recherche partenarial et participatif portant sur le patrimoine lié à la mer aux Marquises (PALIMMA) a contribué à identifier les connaissances présentes dans la bibliographie et à construire des données avec la population. Il s’agissait de déterminer quels étaient les patrimoines liés à la mer pour les Marquisiens, les éventuelles menaces afférentes et les pistes de gestion. Au-delà de la production de connaissance, ce programme, porté par la société marquisienne, a participé à la construction des territoires, à renforcer la capacité des populations à intervenir dans les débats et à la construction de liens entre individus et institutions.</dc:description>
+    <dc:description xml:lang="en">Marquesas islands archipelago aimes to built its territorial development project in particular thanks to become listed as a world heritage site by UNESCO and the establishment of a marine protected area. In this context, a research programme was carried out. It was a partenarial and partipatory research about maritime heritage in Marquesas (PALIMMA). The objectives were to identify knowledge in the bibliography and to built data with the population (what heritage, what threats and what managerial solutions). Beyond knowledge production, this research programme, with marquisian local community, showed how important it is in ordrer to reach a balanced territorial development, to foster the empowerment of local population and to build relationships between individuals and institutions. A research program like PALIMMA can help to aim those objectives.</dc:description>
 
 
