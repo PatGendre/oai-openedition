@@ -362,9 +362,21 @@ For OpenEdition Books only, ``dcterms:subjects`` may also contains terms from `B
     <dcterms:abstract xml:lang="fr">Cet article se penche sur la crise de 2001 au sujet des manuels d’histoire suite à l’homologation du manuel révisionniste de la Société pour la rédaction de nouveaux manuels d’histoire (« Tsukuru-kai »). Notre propos n’est pas de revenir sur le contenu de ce manuel, mais d’examiner les réactions qu’il suscita en Corée du Sud, où il était considéré comme la pointe de l’iceberg d’un problème touchant tous les manuels d’histoire japonais, ainsi que la riposte que ces critiques coréennes provoquèrent dans les milieux proches du manuel révisionniste. Au-delà des accusations réciproques de « déformer » l’histoire, l’analyse comparative des sujets de controverse dans les principaux manuels des deux pays révèle que les divergences sont bien moindres que les frictions diplomatiques engendrées par cette crise ne le suggéraient. La comparaison avec les éditions suivantes des manuels montre en outre que de part et d’autre, certaines leçons ont été tirées afin d’éviter qu’une crise de l’ampleur de 2001 ne se reproduise.</dcterms:abstract>
     <dcterms:abstract xml:lang="en">This paper deals with the history textbook crisis of 2001 following the authorization of the revisionist textbook from the Society for History Textbook Reform. Our purpose is not to delve into that textbook but to examine both the reactions it sparked in South Korea, where it was deemed to be the tip of the iceberg of a wider problem affecting all Japanese history textbooks, and the response that supporters of the revisionist textbook gave to South Korean criticisms. Beyond the mutual charges of “distorting” history, the comparative analysis of the controversial issues reveals far less discrepancies than the diplomatic row triggered by that crisis may have suggested. Comparison with succeeding editions of the textbooks indicates that both sides have drawn the conclusions to avoid a similar crisis.</dcterms:abstract>
 
+20. dctems:description
+--------------------------------
+
+``dcterms:descripton`` provides an excerpt of the document, usualy the first lines. ``dcterms:descripton`` is used only in the lack of ``dcterms:abstract``.
+
+**Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:appareil/1493&metadataPrefix=qdc
+
+.. code-block:: xml
+    :linenos:
+
+    <dcterms:description>Le livre de Michel Serres présente plusieurs difficultés de lecture : le désordre semble régner, des interruptions succèdent à d’autres interruptions. Les textes littéraires, scientifiques et philosophiques qui servent de base aux analyses sont cachés par des couches de plus en plus complexes : des greffes d’autres textes, des images, des métaphores, etc. Peut-être peut-on trouver une raison à ceci dans le fait que Serres ne se borne pas à faire une théorie du parasite. Il cherche plutôt à mo...</dcterms:description>
 
 
-20. dcterms:bibliographicalCitation
+
+21. dcterms:bibliographicalCitation
 ---------------------------------------------
 
 Available for OpenEdition Journals, for ``issue`` documents only (see :ref:`types`). 
