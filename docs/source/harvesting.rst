@@ -30,6 +30,7 @@ The parameters to use are ``from`` and ``until``. Allowed date formats are ``dd-
 
 http://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&from=2017-03-13T16:47:48Z will retrieve a list of records added or updated since the 13 march 2017 at 4.47 pm.
 
+.. _rToken:
 
 resumptionToken
 ----------------------------------

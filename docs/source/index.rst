@@ -29,6 +29,7 @@ This documentation describes the specific elements related to OpenEdition but do
 
    availableFormats
    sets
+   types
    oai_dc
    qdc
    mets

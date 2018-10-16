@@ -218,56 +218,14 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
     
     <dcterms:language scheme="RFC1766">en</dcterms:language>
 
-.. _type:
+.. _dctermstype:
 
 13. dcterms:type
 -------------------------
-Document type
 
-* Possible values for OpenEdition Journals
+Available for all platforms. 
 
-  * ``issue``
-  * ``part``
-  * ``article``
-  * ``review``
-  * ``bibliography``
-  * ``introduction``
-  * ``archaeological note``
-  * ``chapter``
-  * ``book``
-  * ``other``
-
-* Possible values for OpenEdition Books
-
-  * ``book``
-  * ``part``
-  * ``chapter``
-  * ``bibliography``
-  * ``appendix``
-  * ``index``
-  * ``foreword``
-  * ``afterword``
-  * ``bibliography``
-  * ``review``
-  * ``article``
-  * ``introduction``
-  * ``other``
-
-* Possible values for Hypotheses 
-
-  * ``post``
-
-* Possible values for Calenda 
-
-  * ``call for papers``
-  * ``colloquium``
-  * ``study days``
-  * ``seminar and workshop``
-  * ``miscellaneous information``
-  * ``scholarship, prize and job offer``
-  * ``lectures``
-  * ``summer school``
-  * ``call for tender``
+``dcterms:type`` provides the document type according to the list of types available in this section: :ref:`types`. 
 
 
 **Example:** 
@@ -296,7 +254,7 @@ Available for OpenEdition Journals and OpenEdition Books. ``dcterms:rights`` may
 -------------------------
 Available for OpenEdition Journals and OpenEdition Books.
 
-``dcterms:extent`` may provide the number of pages or the pages range in print edition of the document
+``dcterms:extent`` may provide the number of pages or the pages range in print edition of the document.
 
 **Page range example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:ethnomusicologie/1513&metadataPrefix=qdc
 
@@ -409,7 +367,7 @@ For OpenEdition Books only, ``dcterms:subjects`` may also contains terms from `B
 20. dcterms:bibliographicalCitation
 ---------------------------------------------
 
-Available for OpenEdition Journals, for ``issue`` documents only (see :ref:`type`). 
+Available for OpenEdition Journals, for ``issue`` documents only (see :ref:`types`). 
 
 .. note :: Only covers a small part of journal issues.
 

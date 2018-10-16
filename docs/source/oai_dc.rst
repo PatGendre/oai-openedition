@@ -135,56 +135,26 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
     
     <dc:language>en</dc:language>
 
+
+.. _dctype:
+
 8. dc:type
 -----------------
-Document type
 
 8.1. OpenEdition Types
 ^^^^^^^^^^^^^^^^^^^^^^
-* Possible values for OpenEdition Journals
+Available for all platforms. 
 
-  * ``issue``
-  * ``part``
-  * ``article``
-  * ``review``
-  * ``bibliography``
-  * ``introduction``
-  * ``archaeological note``
-  * ``chapter``
-  * ``book``
-  * ``other``
+``dc:type`` provides the document type according to the list of types available in this section: :ref:`types`. 
 
-* Possible values for OpenEdition Books
+**Example:** 
+http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:lectures/27329&metadataPrefix=oai_dc
 
-  * ``book``
-  * ``part``
-  * ``chapter``
-  * ``bibliography``
-  * ``appendix``
-  * ``index``
-  * ``foreword``
-  * ``afterword``
-  * ``bibliography``
-  * ``review``
-  * ``article``
-  * ``introduction``
-  * ``other``
+.. code-block:: xml
+    :linenos:
+    
+    <dc:type>review</dc:type>
 
-* Possible values for Hypotheses 
-
-  * ``post``
-
-* Possible values for Calenda 
-
-  * ``call for papers``
-  * ``colloquium``
-  * ``study days``
-  * ``seminar and workshop``
-  * ``miscellaneous information``
-  * ``scholarship, prize and job offer``
-  * ``lectures``
-  * ``summer school``
-  * ``call for tender``
 
 8.2. OpenAIRE Types (OpenEdition Journals and Openedition Books)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -203,7 +173,6 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:lectures/27
 .. code-block:: xml
     :linenos:
     
-    <dc:type>review</dc:type>
     <dc:type>info:eu-repo/semantics/review</dc:type>
 
 
