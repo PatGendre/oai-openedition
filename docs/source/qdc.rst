@@ -26,9 +26,9 @@ Available for OpenEdition Journals and OpenEdition Books.
 --------------------------
 Author(s) of the document. Repeatable.
 
-Unavailable for Calenda (records of the set ``events``)
+Unavailable for Calenda.
 
-For Journal Issues and Books, ``dcterms.creator`` provides authors of the issue or the book AND authors of the child articles or chapters.
+.. note :: For Journal Issues and Books, ``dcterms.creator`` provides authors of the issue or the book AND authors of the child articles or chapters.
 
 **Example of a book with multiple authors at chapter level:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/348&metadataPrefix=qdc
@@ -344,7 +344,7 @@ Available for OpenEdition Journals and OpenEdition Books.
     <dcterms:temporal>Néolithique</dcterms:temporal>
 
 18. dcterms:subjects
------------------
+---------------------------
 
 18.1 Keywords
 ^^^^^^^^^^^^^^^^^^
@@ -411,7 +411,7 @@ For OpenEdition Books only, ``dcterms:subjects`` may also contains terms from `B
 
 Available for OpenEdition Journals, for ``issue`` documents only (see :ref:`type`). 
 
-.. note :: Only covers part of the issues.
+.. note :: Only covers a small part of journal issues.
 
 Elements ``dcterms:bibliographicalCitation.issue`` and ``dcterms:bibliographicalCitation.volume`` provides the issue number ans the volume number.
 
