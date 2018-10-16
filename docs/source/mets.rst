@@ -1,4 +1,4 @@
-mets format
+METS format
 =================
 
 The ``mets`` (Metadata Encoding and Transmission Standard) format is available for books and journal issues (more info about types :ref:`types`). The aim of this format is to describe the metadata and the complete structure of the volume (book or journal issue). 

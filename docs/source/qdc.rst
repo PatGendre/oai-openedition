@@ -1,9 +1,9 @@
 .. _qdc:
 
-qdc format
+QDC format
 ===================
 
-The qdc format provides the following elements:
+The ``qdc`` format provides the following elements:
 
 1. dcterms:title
 -----------------

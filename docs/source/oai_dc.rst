@@ -1,7 +1,7 @@
-oai_dc format
+OAI_DC format
 ===================
 
-The oai_dc format provides the following elements:
+The ``oai_dc`` format provides the following elements:
 
 1. dc:title
 -----------------
