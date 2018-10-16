@@ -1,7 +1,7 @@
 oai_dc format
 ===================
 
-The oai_dc format provides th following elements
+The oai_dc format provides the following elements:
 
 1. dc:title
 -----------------
@@ -141,21 +141,34 @@ Document type
 
 8.1. OpenEdition Types
 ^^^^^^^^^^^^^^^^^^^^^^
-
 * Possible values for OpenEdition Journals
 
   * ``issue``
+  * ``part``
   * ``article``
   * ``review``
-  * ``section``
-  * other non-controlled values
+  * ``bibliography``
+  * ``introduction``
+  * ``archaeological note``
+  * ``chapter``
+  * ``book``
+  * ``other``
 
 * Possible values for OpenEdition Books
 
   * ``book``
+  * ``part``
   * ``chapter``
   * ``bibliography``
-  * other non-controlled values
+  * ``appendix``
+  * ``index``
+  * ``foreword``
+  * ``afterword``
+  * ``bibliography``
+  * ``review``
+  * ``article``
+  * ``introduction``
+  * ``other``
 
 * Possible values for Hypotheses 
 
@@ -163,15 +176,15 @@ Document type
 
 * Possible values for Calenda 
 
-  * ``appel a contribution``
-  * ``colloque``
-  * ``journee d'etude``
-  * ``seminaire``
-  * ``informations diverses``
-  * ``bourse prix et emploi``
-  * ``cycle de conferences``
-  * ``ecole d'ete``
-  * ``appel d'offres``
+  * ``call for papers``
+  * ``colloquium``
+  * ``study days``
+  * ``seminar and workshop``
+  * ``miscellaneous information``
+  * ``scholarship, prize and job offer``
+  * ``lectures``
+  * ``summer school``
+  * ``call for tender``
 
 8.2. OpenAIRE Types (OpenEdition Journals and Openedition Books)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -246,7 +259,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:balkanologi
 ^^^^^^^^^^^^^^^^^^
 
 Available for OpenEdition Journals and OpenEdition Books. 
-``dc:subjects`` may contains keywords. In this case, and ``xml:lang`` attribute specifies the language of the keyword.
+``dc:subjects`` may contains keywords. In this case, an ``xml:lang`` attribute specifies the language of the keyword.
 
 **Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:belgeo/20507&metadataPrefix=oai_dc
 
