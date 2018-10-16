@@ -26,7 +26,8 @@ author = u'Jean-François Rivière'
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'0.0.1'
+# release = u'0.0.1'
+release = u''
 
 
 # -- General configuration ---------------------------------------------------
