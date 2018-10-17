@@ -33,7 +33,7 @@ This documentation describes the specific elements related to OpenEdition but do
    oai_dc
    qdc
    mets
-
+   validation
 
 .. toctree::
    :maxdepth: 2
