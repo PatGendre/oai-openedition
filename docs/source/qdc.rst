@@ -61,7 +61,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/8732&m
 .. code-block:: xml
     :linenos:
     
-    <dcterms:issued scheme="W3CDTF">2017-09-01</dcterms:issued>
+    <dcterms:issued xsi:type="dcterms:W3CDTF">2017-09-01</dcterms:issued>
 
 
 6. dcterms:accessRights
@@ -95,7 +95,7 @@ Applicable for OpenEdition Jounals. If ``dcterms:accessRights = "info:eurepo/sem
     :linenos:
     
     <dcterms:accessRights>info:eu-repo/semantics/embargoedAccess</dcterms:accessRights>
-    <dcterms:available scheme="W3CDTF">2022-01-01</dcterms:available>
+    <dcterms:available xsi:type="dcterms:W3CDTF">2022-01-01</dcterms:available>
 
 
 8. dcterms:publisher
@@ -218,7 +218,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
 .. code-block:: xml
     :linenos:
     
-    <dcterms:language scheme="RFC1766">en</dcterms:language>
+    <dcterms:language xsi:type="dcterms:RFC1766">en</dcterms:language>
 
 .. _dctermstype:
 
