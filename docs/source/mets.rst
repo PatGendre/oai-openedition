@@ -55,7 +55,7 @@ The ``mets:fileSec`` (File Section)  element is a main element contaning ``mets:
 
 The ``mets:file`` element have a child node ``mets:FLocat`` with an attribute ``xlink:href`` providing the url of the ressource.
 
-.. note :: ``mets:structMap/mets:div/mets:fptr/@FILEID`` match ``mets:fileSec/mets:fileGrp/mets:file/@ID``.
+.. note :: ``mets:structMap/mets:div/mets:fptr/@FILEID`` match ``mets:fileSec/mets:fileGrp/mets:file/@ID``
 
 **example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:puv/2002&metadataPrefix=mets
 
@@ -85,7 +85,7 @@ Each ``mets:div`` element used in the ``mets:strucMap`` is described in a ``mets
 
 The ``mets:dmdSec`` have an ``ID`` attribute matching the ``DMDID`` of ``mets:div`` elements available in ``mets:structMap``.
 
-.. note :: ``mets:structMap/mets:div/@DMDID`` match ``mets:mets/mets:dmdSec/@ID``.
+.. note :: ``mets:structMap/mets:div/@DMDID`` match ``mets:mets/mets:dmdSec/@ID``
 
 **example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:puv/2002&metadataPrefix=mets
 
