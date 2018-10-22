@@ -22,8 +22,7 @@ The ``mets:structMap`` element describes the tree structure of the volume.
 * ``TYPE``:  :ref:`List of document types <types>` 
 * ``ORDER``: sequence number whitch defines the order of the documents relative to the parent ``div`` element.
 * ``DMDID``: refer to the ``ID`` of the relevant ``mets:dmdSec`` element.
-* ``LABEL``: descriptive label (buggy FIXME)
-
+* ``LABEL``: descriptive label 
 
 Each ``mets:div`` element refering to a document file have one or several ``mets:fptr`` child element, with a ``FILEID`` refer to the ``ID`` of the relevant ``mets:file`` element.
 
@@ -32,20 +31,21 @@ Each ``mets:div`` element refering to a document file have one or several ``mets
 .. code-block:: xml
     :linenos:
 
-    <mets:div LABEL="I. Des pratiques de l'Ailleurs romantique à l'irruption des premières modernités arabes" TYPE="part" DMDID="MD_OB_puv_2054" ID="SM_OB_puv_2054" ORDER="3">
-        <mets:div LABEL="Voix de femmes" TYPE="chapter" DMDID="MD_OB_puv_2055" ID="SM_OB_puv_2055" ORDER="1">
+    <mets:div LABEL="Voix de femmes" TYPE="part" DMDID="MD_OB_puv_2054" ID="SM_OB_puv_2054" ORDER="3">
+        <mets:div LABEL="Le harem des voyageuses et des résidentes : un Ailleurs radical" TYPE="chapter" DMDID="MD_OB_puv_2055" ID="SM_OB_puv_2055" ORDER="1">
             <mets:fptr FILEID="F_OB_puv_basictei_2055"/>
             <mets:fptr FILEID="F_OB_puv_tei_2055"/>
             <mets:fptr FILEID="F_OB_puv_xhtml_2055"/>
             <mets:fptr FILEID="F_OB_puv_pdf_2055"/>
         </mets:div>
-        <mets:div LABEL="Voix de femmes" TYPE="chapter" DMDID="MD_OB_puv_2056" ID="SM_OB_puv_2056" ORDER="2">
+        <mets:div LABEL="Le voyage de Blanche Lee Childe (1881-1882) ou les conservatismes à l’épreuve des altérités" TYPE="chapter" DMDID="MD_OB_puv_2056" ID="SM_OB_puv_2056" ORDER="2">
             <mets:fptr FILEID="F_OB_puv_basictei_2056"/>
             <mets:fptr FILEID="F_OB_puv_tei_2056"/>
             <mets:fptr FILEID="F_OB_puv_xhtml_2056"/>
             <mets:fptr FILEID="F_OB_puv_pdf_2056"/>
         </mets:div>
     </mets:div>
+
 
 2. mets:fileSec
 ----------------------
