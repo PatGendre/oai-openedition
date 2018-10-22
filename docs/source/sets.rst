@@ -28,9 +28,11 @@ One set for each "publication" (Journal, Blog, Book Publisher)
 Find a set
 --------------
 
+There are several ways to find the identifier of a set:
+
 From OAI ListSets 
 ^^^^^^^^^^^^^^^^^^^
-The complete list of Sets is available in the repository using the OAI verb ``ListSets``. The repository diplays 10 set per page. Use the ``resumptionToken`` parameter to display the next page. 
+The complete list of Sets is available in the repository using the OAI verb ``ListSets``. The repository diplays 10 sets per page. Use the ``resumptionToken`` parameter to display the next page. 
 
 * http://oai.openedition.org/?verb=ListSets
 * http://oai.openedition.org/?verb=ListSets&resumptionToken=cursor%3D10
@@ -38,7 +40,7 @@ The complete list of Sets is available in the repository using the OAI verb ``Li
 
 From publication URL
 ^^^^^^^^^^^^^^^^^^^^^
-You can infer the publication ID from its URL.
+You can infer the set identifier ID of a publication (journal, blog...)  from its URL.
 
 **Examples**
 
