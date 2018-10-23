@@ -17,8 +17,7 @@ This documentation describes the specific elements related to OpenEdition but do
    :caption: Harvesting
 
    harvesting
-   sample
-
+   faq
   
 
 .. toctree::

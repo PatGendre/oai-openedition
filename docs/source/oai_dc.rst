@@ -25,6 +25,7 @@ For archeological note, ``dc:contributor`` may also contain archaeological proje
 
 .. code-block:: xml
     :linenos:
+
     <dc:type>archaeological note</dc:type>
     <dc:creator>Racinet, Philippe</dc:creator>
     <dc:creator>Jonvel, Richard</dc:creator>
@@ -50,6 +51,7 @@ For archeological note and article, ``dc:contributor`` may also contain collabor
 
 .. code-block:: xml
     :linenos:
+
     <dc:contributor>Perrault, Christophe</dc:contributor>
     <dc:contributor>Prat, Béatrice</dc:contributor>
     <dc:contributor>Rué, Mathieu</dc:contributor>
@@ -57,6 +59,8 @@ For archeological note and article, ``dc:contributor`` may also contain collabor
 
 See https://journals.openedition.org/archeomed/11348?lang=en for roles of each ``dc:contributor``.
 
+
+.. _dcrights:
 
 4. dc:rights
 -----------------

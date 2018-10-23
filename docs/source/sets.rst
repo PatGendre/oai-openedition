@@ -24,6 +24,7 @@ One set for each "publication" (Journal, Blog, Book Publisher)
 * ``blogs:[blogID]``: records from a specific blog. Ex. ``blogs:cpa``
 * Not applicable for Calenda
 
+.. _findaset:
 
 Find a set
 --------------

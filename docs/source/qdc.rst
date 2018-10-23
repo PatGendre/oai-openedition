@@ -41,6 +41,7 @@ For archeological note, ``dcterms:creator`` may also contain archaeological proj
 
 .. code-block:: xml
     :linenos:
+
     <dcterms:type>archaeological note</dcterms:type>
     <dcterms:creator>Racinet, Philippe</dcterms:creator>
     <dcterms:creator>Jonvel, Richard</dcterms:creator>
@@ -66,6 +67,7 @@ For archeological note and article, ``dcterms:contributor`` may also contain col
 
 .. code-block:: xml
     :linenos:
+
     <dcterms:contributor>Perrault, Christophe</dcterms:contributor>
     <dcterms:contributor>Prat, Béatrice</dcterms:contributor>
     <dcterms:contributor>Rué, Mathieu</dcterms:contributor>
@@ -89,6 +91,8 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/8732&m
     
     <dcterms:issued xsi:type="dcterms:W3CDTF">2017-09-01</dcterms:issued>
 
+
+.. _dctermsaccessrights:
 
 6. dcterms:accessRights
 ---------------------------------
