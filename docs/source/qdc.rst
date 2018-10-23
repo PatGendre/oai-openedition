@@ -35,6 +35,18 @@ Unavailable for Calenda.
 **Example of a book with multiple authors at chapter level:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/348&metadataPrefix=qdc
 
+For archeological note, ``dcterms:creator`` may also contain archaeological project directors.
+
+**Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:archeomed/7020&metadataPrefix=qdc
+
+.. code-block:: xml
+    :linenos:
+    <dcterms:type>archaeological note</dcterms:type>
+    <dcterms:creator>Racinet, Philippe</dcterms:creator>
+    <dcterms:creator>Jonvel, Richard</dcterms:creator>
+
+See https://journals.openedition.org/archeomed/7020?lang=en for roles of each ``dcterms:creator``.
+
 4. dcterms:contibutor
 ---------------------------
 
@@ -47,6 +59,20 @@ Scientific and academic editor of the document. Available for OpenEdition Journa
 
     <dcterms:contributor>Alvarez Roblin, David</dcterms:contributor>
     <dcterms:contributor>Biaggini, Olivier</dcterms:contributor>
+
+For archeological note and article, ``dcterms:contributor`` may also contain collaborators.
+
+**Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:archeomed/11348&metadataPrefix=qdc
+
+.. code-block:: xml
+    :linenos:
+    <dcterms:contributor>Perrault, Christophe</dcterms:contributor>
+    <dcterms:contributor>Prat, Béatrice</dcterms:contributor>
+    <dcterms:contributor>Rué, Mathieu</dcterms:contributor>
+    <dcterms:contributor>Caillat, Pierre</dcterms:contributor>
+
+See https://journals.openedition.org/archeomed/11348?lang=en for roles of each ``dcterms:contributor``.
+
 
 
 5. dcterms:issued

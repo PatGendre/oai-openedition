@@ -14,10 +14,22 @@ Author(s) of the document. Repeatable.
 
 Unavailable for Calenda.
 
-.. note :: For Journal Issues and Books, ``dc.creator`` provides authors of the issue or the book AND authors of the child articles or chapters.
+For Journal Issues and Books, ``dc.creator`` provides authors of the issue or the book AND authors of the child articles or chapters.
 
 **Example of a book with multiple authors at chapter level:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/348&metadataPrefix=oai_dc
+
+For archeological note, ``dc:contributor`` may also contain archaeological project directors.
+
+**Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:archeomed/7020&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+    <dc:type>archaeological note</dc:type>
+    <dc:creator>Racinet, Philippe</dc:creator>
+    <dc:creator>Jonvel, Richard</dc:creator>
+
+See https://journals.openedition.org/archeomed/7020?lang=en for roles of each ``dc:creator``.
 
 3. dc:contibutor
 -----------------
@@ -32,8 +44,52 @@ Scientific and academic editor of the document. Available for OpenEdition Journa
     <dc:contributor>Alvarez Roblin, David</dc:contributor>
     <dc:contributor>Biaggini, Olivier</dc:contributor>
 
+For archeological note and article, ``dc:contributor`` may also contain collaborators.
 
-4. dc:date
+**Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:archeomed/11348&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+    <dc:contributor>Perrault, Christophe</dc:contributor>
+    <dc:contributor>Prat, Béatrice</dc:contributor>
+    <dc:contributor>Rué, Mathieu</dc:contributor>
+    <dc:contributor>Caillat, Pierre</dc:contributor>
+
+See https://journals.openedition.org/archeomed/11348?lang=en for roles of each ``dc:contributor``.
+
+
+4. dc:rights
+-----------------
+
+4.1. License
+^^^^^^^^^^^^^^^
+
+Available for OpenEdition Journals and OpenEdition Books. 
+``dc:rights`` may contain license information if provided by the publisher.
+
+
+4.2. OpenAIRE Access Level (OpenEdition Journals and Openedition Books)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 guidelines (Access Level) <https://guidelines.openaire.eu/en/latest/literature/field_accesslevel.html>`_, an extra ``dc.rights`` element with a prefix ``info:eu-repo/semantics/`` will provide the publication type with the following vocabulary:
+
+* ``info:eu-repo/semantics/embargoedAccess``
+* ``info:eu-repo/semantics/restrictedAccess``
+* ``info:eu-repo/semantics/openAccess``
+
+**Example:** 
+http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:ariadnaediciones/158&metadataPrefix=oai_dc
+
+.. code-block:: xml
+    :linenos:
+    
+    <dc:rights>CC BY-SA 3.0</dc:rights>
+    <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
+
+
+
+
+5. dc:date
 -----------------
 Publishing date of the document on OpenEdition platform. 
 
@@ -50,7 +106,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/8732&m
     <dc:rights>info:eu-repo/semantics/embargoedAccess</dc:rights>
     <dc:date>info:eu-repo/date/embargoEnd/2021-01-01</dc:date>
 
-5. dc:publisher
+6. dc:publisher
 -----------------
 
 ``dc:publisher`` provides the publisher name.
@@ -67,11 +123,11 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:studifrance
     <dc:publisher>Studi Francesi</dc:publisher>
 
 
-6. dc:identifier
+7. dc:identifier
 -------------------
 Identifier of the document. Repeatable.
 
-6.1. URL
+7.1. URL
 ^^^^^^^^^
 ``dc:identifier`` provides without prefix the URL of the document.
 
@@ -83,7 +139,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/5530&m
 
     <dc:identifier>http://journals.openedition.org/remi/5530</dc:identifier>
 
-6.2. DOI
+7.2. DOI
 ^^^^^^^^^^
 Available for OpenEdition Journals and OpenEdition Books.
 
@@ -97,7 +153,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/5530&m
 
     <dc:identifier>urn:doi:10.4000/remi.5530</dc:identifier>
 
-6.3. ISBN
+7.3. ISBN
 ^^^^^^^^^^
 Available for OpenEdition Books.
 
@@ -123,7 +179,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
     <dc:identifier>urn:eisbn:9782821875470</dc:identifier>
     <dc:identifier>urn:isbn:9783863951221</dc:identifier>
 
-7. dc:language
+8. dc:language
 -----------------
 Document language. RFC1766 format. 
 
@@ -138,10 +194,10 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
 
 .. _dctype:
 
-8. dc:type
+9. dc:type
 -----------------
 
-8.1. OpenEdition Types
+9.1. OpenEdition Types
 ^^^^^^^^^^^^^^^^^^^^^^
 Available for all platforms. 
 
@@ -156,7 +212,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:lectures/27
     <dc:type>review</dc:type>
 
 
-8.2. OpenAIRE Types (OpenEdition Journals and Openedition Books)
+9.2. OpenAIRE Types (OpenEdition Journals and Openedition Books)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 guidelines (Publication Type) <https://guidelines.openaire.eu/en/latest/literature/field_publicationtype.html>`_, an extra ``dc.type`` element with a prefix ``info:eu-repo/semantics/`` will provide the publication type with the following vocabulary:
@@ -174,36 +230,6 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:lectures/27
     :linenos:
     
     <dc:type>info:eu-repo/semantics/review</dc:type>
-
-
-9. dc:rights
------------------
-
-9.1. License
-^^^^^^^^^^^^^^^
-
-Available for OpenEdition Journals and OpenEdition Books. 
-``dc:rights`` may contain license information if provided by the publisher.
-
-
-9.2. OpenAIRE Access Level (OpenEdition Journals and Openedition Books)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-For OpenEdition Journals and OpenEdition Books, and according to `OpenAIRE 3.0 guidelines (Access Level) <https://guidelines.openaire.eu/en/latest/literature/field_accesslevel.html>`_, an extra ``dc.rights`` element with a prefix ``info:eu-repo/semantics/`` will provide the publication type with the following vocabulary:
-
-* ``info:eu-repo/semantics/embargoedAccess``
-* ``info:eu-repo/semantics/restrictedAccess``
-* ``info:eu-repo/semantics/openAccess``
-
-**Example:** 
-http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:ariadnaediciones/158&metadataPrefix=oai_dc
-
-.. code-block:: xml
-    :linenos:
-    
-    <dc:rights>CC BY-SA 3.0</dc:rights>
-    <dc:rights>info:eu-repo/semantics/openAccess</dc:rights>
-
 
 10. dc:coverage
 -----------------
