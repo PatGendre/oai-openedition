@@ -20,7 +20,7 @@ One extra set form records relevant to `OpenAIRE <https://www.openaire.eu/>`_
 One set for each "publication" (Journal, Blog, Book Publisher)
 
 * ``journals:[journalID]``: records from a specific journal. Ex. ``journals:chs``
-* ``books:[publisherID]``: records from a specific book pubisher. Ex. ``books:pur``
+* ``books:[publisherID]``: records from a specific book publisher. Ex. ``books:pur``
 * ``blogs:[blogID]``: records from a specific blog. Ex. ``blogs:cpa``
 * Not applicable for Calenda
 
