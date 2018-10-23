@@ -40,5 +40,5 @@ This documentation describes the specific elements related to OpenEdition but do
    openedition
    license
    help
-
+   changelog
 
