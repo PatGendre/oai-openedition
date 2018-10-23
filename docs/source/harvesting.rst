@@ -42,7 +42,7 @@ For instance, for retrieving the metadata of all documents from the journal Revi
 
 http://oai.openedition.org/?verb=ListRecords&set=journals:rccs&metadataPrefix=oai_dc
 
-The repository will return a first list of 10 documents + a ``resumptionToken`` element a the end of the response.
+The repository will return a list of the first 10 documents + a ``resumptionToken`` element at the end of the response.
 
 .. code-block:: xml
     :linenos:
