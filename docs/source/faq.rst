@@ -11,7 +11,7 @@ All the Calenda and Hypotheses documents are available in open access. You can g
 
 **Calenda:** http://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=events 
 
-**Hypoyheses:** http://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=blogs 
+**Hypotheses:** http://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=blogs 
 
 ----------------------------------------------
 
@@ -24,8 +24,8 @@ This set lists only open access records. More info: :ref:`sets`
 
 **OpenAIRE:** http://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=openaire 
 
-use dc:rights or dcterms:accessRights while harvesting
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+use dc:rights or dcterms:accessRights while harvesting (all platforms)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For each record, the ``dc.rights`` element  (``oai_dc`` format) and the ``dcterms:accessRights`` element (``qdc`` format) provides the access policy of the document. 
 
