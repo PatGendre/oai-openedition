@@ -1,6 +1,9 @@
 METS format
 =================
 
+.. contents:: Table of Contents
+   :depth: 2
+
 The ``mets`` (Metadata Encoding and Transmission Standard) format is available for books and journal issues (more info about types :ref:`types`). The aim of this format is to describe the metadata and the complete structure of the volume (book or journal issue). 
 
 The ``mets`` format is documented on the Library of Congress website: http://www.loc.gov/standards/mets/.

@@ -1,6 +1,9 @@
 Available Formats
 ============================
 
+.. contents:: Table of Contents
+   :depth: 2
+
 Metadata in OAI
 -------------------
 

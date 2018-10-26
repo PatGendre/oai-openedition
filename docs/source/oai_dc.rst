@@ -1,6 +1,9 @@
 OAI_DC format
 ===================
 
+.. contents:: Table of Contents
+   :depth: 2
+
 The ``oai_dc`` format provides the following elements:
 
 1. dc:title

@@ -1,6 +1,9 @@
 Harvesting
 ======================
 
+.. contents:: Table of Contents
+   :depth: 2
+
 The openedition repository follows the version 2.0 of the OAI-PMH protocol available on the Open Archives Initiative website: http://www.openarchives.org/OAI/openarchivesprotocol.html
 
 

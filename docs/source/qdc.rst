@@ -3,6 +3,9 @@
 QDC format
 ===================
 
+.. contents:: Table of Contents
+   :depth: 2
+
 The ``qdc`` format provides the following elements:
 
 1. dcterms:title

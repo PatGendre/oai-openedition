@@ -3,6 +3,9 @@
 Sets description
 ======================
 
+.. contents:: Table of Contents
+   :depth: 2
+
 Available sets
 -------------------------
 
