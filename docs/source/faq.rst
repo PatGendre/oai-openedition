@@ -1,6 +1,9 @@
 FAQ 
 ===
 
+.. contents:: Table of Contents
+   :depth: 2
+
 1. How can I get only open access ressources?
 -----------------------------------------------------------
 
