@@ -23,11 +23,11 @@ The ``mets:structMap`` element describes the tree structure of the volume.
 ``mets:div`` elements are nested to describe the hierarchial organisation of the volume, parts, texts. Each ``mets:div`` element is qualified with the following attributes:
 
 * ``TYPE``:  :ref:`List of document types <types>` 
-* ``ORDER``: sequence number whitch defines the order of the documents relative to the parent ``div`` element.
-* ``DMDID``: refer to the ``ID`` of the relevant ``mets:dmdSec`` element.
+* ``ORDER``: sequence number which defines the order of the documents relative to the parent ``div`` element.
+* ``DMDID``: refers to the ``ID`` of the relevant ``mets:dmdSec`` element.
 * ``LABEL``: descriptive label 
 
-Each ``mets:div`` element refering to a document file have one or several ``mets:fptr`` child element, with a ``FILEID`` refer to the ``ID`` of the relevant ``mets:file`` element.
+Each ``mets:div`` element referring to a document file has one or several ``mets:fptr`` child elements, with a ``FILEID`` referring to the ``ID`` of the relevant ``mets:file`` element.
 
 **example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:puv/2002&metadataPrefix=mets
 
@@ -54,9 +54,9 @@ Each ``mets:div`` element refering to a document file have one or several ``mets
 ----------------------
 
 
-The ``mets:fileSec`` (File Section)  element is a main element contaning ``mets:file`` elements, one for each available format of each document described in the ``mets:structMap`` section.
+The ``mets:fileSec`` (File Section)  element is a main element containing ``mets:file`` elements, one for each available format of each document described in the ``mets:structMap`` section.
 
-The ``mets:file`` element have a child node ``mets:FLocat`` with an attribute ``xlink:href`` providing the url of the ressource.
+The ``mets:file`` elements have a child node ``mets:FLocat`` with an attribute ``xlink:href`` providing the url of the resource.
 
 .. note :: ``mets:structMap/mets:div/mets:fptr/@FILEID`` match ``mets:fileSec/mets:fileGrp/mets:file/@ID``
 
