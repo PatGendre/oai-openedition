@@ -118,7 +118,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/8732&m
 
 ``dc:publisher`` provides the publisher name.
 
-For OpenEdition Journals and Hypotheses documents ``dc:publisher`` provides also the journal or blog title
+For OpenEdition Journals and Hypotheses documents ``dc:publisher`` provides also the journal or blog title.
 
 **Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:studifrancesi/2636&metadataPrefix=oai_dc
@@ -311,7 +311,7 @@ Unused
 13. dc:description
 --------------------------------
 
-``dc:description`` contains abstracts of the document if available, an excerpt (usualy the first lines) otherwise. Abstacts may be available in several languages. In this case, and ``xml:lang`` attribute specifies the language of the description.
+``dc:description`` contains abstracts of the document if available, an excerpt (usually the first lines) otherwise. Abstracts may be available in several languages. In this case, and ``xml:lang`` attribute specifies the language of the description.
 
 **Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:tem/4515&metadataPrefix=oai_dc
 
