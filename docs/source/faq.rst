@@ -10,7 +10,7 @@ FAQ
 Calenda and Hypotheses
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-All the Calenda and Hypotheses documents are available in open access. You can get these documents using the set that match the platforms. More info: :ref:`sets` 
+All the Calenda and Hypotheses documents are available in open access. You can get these documents using the set that matches the platforms. More info: :ref:`sets` 
 
 **Calenda:** http://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=events 
 
@@ -18,7 +18,7 @@ All the Calenda and Hypotheses documents are available in open access. You can g
 
 ----------------------------------------------
 
-For ressources from OpenEdition Journals and OpenEdition Books, you can:
+For resources from OpenEdition Journals and OpenEdition Books, you can:
 
 use the ``openaire`` set (Journals and Books)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -30,7 +30,7 @@ This set lists only open access records. More info: :ref:`sets`
 use dc:rights or dcterms:accessRights while harvesting (all platforms)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For each record, the ``dc.rights`` element  (``oai_dc`` format) and the ``dcterms:accessRights`` element (``qdc`` format) provides the access policy of the document. 
+For each record, the ``dc.rights`` element  (``oai_dc`` format) and the ``dcterms:accessRights`` element (``qdc`` format) provide the access policy of the document. 
 
 See :ref:`dcrights` and :ref:`dctermsaccessrights` for details  
 
