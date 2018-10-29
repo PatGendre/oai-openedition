@@ -105,7 +105,7 @@ Available for the 4 OpenEdition platforms: OpenEdition Books, OpenEdition Journa
 The ``dcterms:accessRights`` element can match the following values :
 
 * ``info:eu-repo/semantics/embargoedAccess`` : articles and journal issues under embargo
-* ``info:eu-repo/semantics/openAccess`` : open access document (article, journal issue, book, book section, blog post, event...). At least the html format is freely accessible. The other formats (pdf, epub) may be.
+* ``info:eu-repo/semantics/openAccess`` : open access document (article, journal issue, book, book section, blog post, event...). At least the html format is freely accessible. The other formats (pdf, epub) may be freely available or with restricted access.
 * ``info:eu-repo/semantics/restrictedAccess`` : book and book section in restricted acces.
 
 **Example:** 
@@ -120,7 +120,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
 7. dcterms:available
 -------------------------
 
-Applicable for OpenEdition Jounals. If ``dcterms:accessRights = "info:eurepo/semantics/embargoedAccess"``, then the ``dcterms:available`` element will provide the end date of embargo (availability date of the document in open access):
+Applicable for OpenEdition Jounals. If ``dcterms:accessRights = "info:eurepo/semantics/embargoedAccess"``, then the ``dcterms:available`` element will provide the end date of the embargo period (i.e. the availability date of the document in open access):
 
 **Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:rfp/5246&metadataPrefix=qdc
 
@@ -136,7 +136,7 @@ Applicable for OpenEdition Jounals. If ``dcterms:accessRights = "info:eurepo/sem
 
 ``dcterms:publisher`` provides the publisher name.
 
-For OpenEdition Journals and Hypotheses documents ``dcterms:publisher`` provides also the journal or blog title
+For OpenEdition Journals and Hypotheses documents, ``dcterms:publisher`` provides also the journal or blog title
 
 **Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:studifrancesi/2636&metadataPrefix=qdc
 
@@ -181,7 +181,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:remi/5530&m
 ^^^^^^^^^^
 Available for OpenEdition Books.
 
-``dcterms:identifier`` with an attribute ``scheme="URN"`` and a ``urn:isbn`` or ``urn:eisbn`` prefix provides respectively ISBN of the print and electronic version of the book.
+``dcterms:identifier`` with an attribute ``scheme="URN"`` and a ``urn:isbn`` or ``urn:eisbn`` prefix provides respectively the ISBN of the print and electronic versions of the book.
 
 **Example:** 
 http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:gup/348&metadataPrefix=qdc
@@ -208,7 +208,7 @@ http://oai.openedition.org/?verb=GetRecord&identifier=oai:books.openedition.org:
 
 Available for OpenEdition Journals.
 
-``dcterms:isPartOf`` with an attribute ``scheme="URN"`` and a ``urn:issn`` or ``urn:eissn`` prefix provides respectively ISSN of the print and electronic version of the journal in which the document was published.
+``dcterms:isPartOf`` with an attribute ``scheme="URN"`` and a ``urn:issn`` or ``urn:eissn`` prefix provides respectively the ISSN of the print and electronic versions of the journal in which the document was published.
 
 **Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:geocarrefour/10121&metadataPrefix=qdc
 
@@ -223,9 +223,9 @@ Available for OpenEdition Journals.
 
 Available for OpenEdition Journals and OpenEdition Books.
 
-OpenEdition provide partners an access to full text in TEI (`Text Encoding Initiative <http://www.tei-c.org/>`_) format and Raw text format for documents published on OpenEdition Journals and OpenEdition Books. 
+OpenEdition provides partners an access to full text in TEI (`Text Encoding Initiative <http://www.tei-c.org/>`_) format and Raw text format for documents published on OpenEdition Journals and OpenEdition Books. 
 
-Link to TEI structured full text and to Raw text is retrivable in ``dcterms:hasFormat``.
+Link to TEI structured full text and to Raw text is retrievable in ``dcterms:hasFormat``.
 
 * ``<dcterms:hasFormat scheme="TEI">``: link to structured  XML-TEI Full text (suitable for republication and text and dat mining)
 * ``<dcterms:hasFormat scheme="BASICTEI">``: link to full text in the "basicTEI" format witch provide metadata of the document in TeiHeader and raw text in the body section (suitable for text indexing). 
@@ -387,7 +387,7 @@ For OpenEdition Books only, ``dcterms:subjects`` may also contains terms from `B
 19. dctems:abstract
 --------------------------------
 
-``dcterms:abstract`` provides abstracts of the document. Abstacts may be available in several languages specified by the ``xml:lang`` attribute.
+``dcterms:abstract`` provides abstracts of the document. Abstracts may be available in several languages specified by the ``xml:lang`` attribute.
 
 **Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:cipango/1688&metadataPrefix=qdc
 
@@ -400,7 +400,7 @@ For OpenEdition Books only, ``dcterms:subjects`` may also contains terms from `B
 20. dctems:description
 --------------------------------
 
-``dcterms:descripton`` provides an excerpt of the document, usualy the first lines. ``dcterms:descripton`` is used only in the lack of ``dcterms:abstract``.
+``dcterms:description`` provides an excerpt of the document, usually the first lines. ``dcterms:descripton`` is used only when ``dcterms:abstract`` is missing.
 
 **Example:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:appareil/1493&metadataPrefix=qdc
 
@@ -418,7 +418,7 @@ Available for OpenEdition Journals, for ``issue`` documents only (see :ref:`type
 
 .. note :: Only covers a small part of journal issues.
 
-Elements ``dcterms:bibliographicalCitation.issue`` and ``dcterms:bibliographicalCitation.volume`` provides the issue number ans the volume number.
+Elements ``dcterms:bibliographicalCitation.issue`` and ``dcterms:bibliographicalCitation.volume`` provide the issue number and the volume number.
 
 **Example with issue only:** http://oai.openedition.org/?verb=GetRecord&identifier=oai:revues.org:beo/787&metadataPrefix=qdc
 
