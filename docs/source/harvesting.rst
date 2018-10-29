@@ -4,7 +4,7 @@ Harvesting
 .. contents:: Table of Contents
    :depth: 2
 
-The openedition repository follows the version 2.0 of the OAI-PMH protocol available on the Open Archives Initiative website: http://www.openarchives.org/OAI/openarchivesprotocol.html
+The OpenEdition repository follows the version 2.0 of the OAI-PMH protocol available on the Open Archives Initiative website: http://www.openarchives.org/OAI/openarchivesprotocol.html
 
 
 Selective Harvesting
@@ -25,13 +25,13 @@ More info about available sets: :ref:`sets`
 Selective harvesting by date
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The repository allows harvesting by date, i.e. harvesting of records added or updated before or after a specified date
+The repository allows harvesting by date, i.e. harvesting records added or updated before or after a specified date
 
 The parameters to use are ``from`` and ``until``. Allowed date formats are ``dd-mm-yyyy`` and ``dd-mm-yyyyThh:mm:ssZ``.
 
 **Example**
 
-http://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&from=2017-03-13T16:47:48Z will retrieve a list of records added or updated since the 13 march 2017 at 4.47 pm.
+http://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&from=2017-03-13T16:47:48Z will retrieve a list of records added or updated since the 13 March 2017 at 4.47 pm.
 
 .. _rToken:
 
