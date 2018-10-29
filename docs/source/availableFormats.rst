@@ -22,12 +22,12 @@ TEI full text and Raw full text for partners
 
 .. note :: Access to Full text in TEI and Raw text format is only available for authorized IP address (OpenEdition partners)
 
-OpenEdition provide partners an access to full text in TEI (`Text Encoding Initiative <http://www.tei-c.org/>`_) format and Raw text format for documents published on OpenEdition Journals and OpenEdition Books. 
+OpenEdition provides partners an access to full text in TEI (`Text Encoding Initiative <http://www.tei-c.org/>`_) format and Raw text format for documents published on OpenEdition Journals and OpenEdition Books. 
 
-Link to TEI structured full text and to Raw text (actually BASICTEI format) is retrivable from OAI in ``qdc`` format, following the url available in these elements:
+Link to TEI structured full text and to Raw text (actually BASICTEI format) is retrievable from OAI in ``qdc`` format, following the url available in these elements:
 
 * ``<dcterms:hasFormat scheme="TEI">``: link to structured  XML-TEI Full text (suitable for republication and text and data mining)
-* ``<dcterms:hasFormat scheme="BASICTEI">``: link to full text in the "basicTEI" format witch provide metadata of the document in TeiHeader and raw text in the body section of the TEI document (suitable for text indexing). 
+* ``<dcterms:hasFormat scheme="BASICTEI">``: link to full text in the "basicTEI" format witch provides metadata of the document in TeiHeader and raw text (suitable for text indexing) in the body section of the TEI document. 
 
 If you need access to OpenEdition’s TEI as a partner, please email us at contact+oai@openedition.org.
 
